@@ -63,7 +63,7 @@ export function Hero() {
             Let&apos;s Talk
           </a>
           
-          <a href="https://drive.google.com/file/d/1EZ3NobhWcfl__s2JA99uxS8hr_00mmAD/view?usp=drive_link" className="group px-8 py-4 bg-transparent border border-black/20 dark:border-white/20 text-black dark:text-white font-medium rounded-lg hover:bg-black/5 dark:hover:bg-white/5 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 text-sm w-full sm:w-auto">
+          <a href="https://drive.google.com/file/d/1Q7pZSP7rUoye53sIKw6_VIz8-JySx2Da/view?usp=drive_link" className="group px-8 py-4 bg-transparent border border-black/20 dark:border-white/20 text-black dark:text-white font-medium rounded-lg hover:bg-black/5 dark:hover:bg-white/5 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 text-sm w-full sm:w-auto">
             Download CV
             <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
           </a>
