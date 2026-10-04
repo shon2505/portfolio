@@ -6,21 +6,10 @@ import { OrbitalBackground } from "@/components/ui/OrbitalBackground";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <OrbitalBackground />
 
       <div className="max-w-5xl mx-auto px-6 relative z-10 flex flex-col items-center text-center">
-        {/* Availability Pill */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 backdrop-blur-md text-xs font-medium tracking-wide mb-8"
-        >
-          <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse" />
-          AVAILABLE FOR WORK
-        </motion.div>
-
         {/* Greeting */}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -39,7 +28,7 @@ export function Hero() {
           className="text-6xl md:text-8xl lg:text-[140px] font-bold tracking-tight mb-8 text-black dark:text-white"
           style={{ lineHeight: 1 }}
         >
-          BUILDER
+          ENGINEER
         </motion.h1>
 
         {/* Subtitle */}
@@ -63,7 +52,7 @@ export function Hero() {
             Let&apos;s Talk
           </a>
           
-          <a href="https://drive.google.com/file/d/1Q7pZSP7rUoye53sIKw6_VIz8-JySx2Da/view?usp=drive_link" className="group px-8 py-4 bg-transparent border border-black/20 dark:border-white/20 text-black dark:text-white font-medium rounded-lg hover:bg-black/5 dark:hover:bg-white/5 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 text-sm w-full sm:w-auto">
+          <a href="https://drive.google.com/file/d/14qr_So4dch_bw0OJPGKz62uoVOTo7_sx/view?usp=drive_link" className="group px-8 py-4 bg-transparent border border-black/20 dark:border-white/20 text-black dark:text-white font-medium rounded-lg hover:bg-black/5 dark:hover:bg-white/5 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2 text-sm w-full sm:w-auto">
             Download CV
             <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
           </a>

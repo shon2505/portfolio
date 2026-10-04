@@ -198,7 +198,7 @@ export function Contact() {
           ========================================= */}
       <section
         id="contact"
-        className="py-24 md:py-32 relative z-10 px-6 max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center gap-16 min-h-screen border-b border-white/10"
+        className="py-16 md:py-20 relative z-10 px-6 max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center gap-16 min-h-[80vh] border-b border-white/10"
       >
         {/* Left: Form */}
         <div className="w-full lg:w-1/2 flex flex-col">

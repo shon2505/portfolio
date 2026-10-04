@@ -12,6 +12,123 @@ import { PROJECTS } from "@/constants";
 
 function ProjectPreview({ id }: { id: string }) {
   switch (id) {
+    case "cafirm":
+      return (
+        <div className="w-full h-full bg-[#060606] flex items-center justify-center p-4 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:10px_10px]" />
+          <div className="relative z-10 w-full flex items-center justify-center gap-3">
+            <div className="w-[115px] shrink-0 bg-[#0c0c0c] border border-white/5 rounded-lg p-2 shadow-md">
+              <div className="flex items-center justify-between border-b border-white/5 pb-1 mb-1">
+                <span className="text-[6px] font-bold text-violet-400 tracking-wider">CA FIRM CRM</span>
+                <span className="w-1 h-1 rounded-full bg-violet-500 animate-pulse" />
+              </div>
+              <div className="space-y-1">
+                <div className="bg-zinc-900/30 p-1 border border-white/5 rounded-[3px]">
+                  <div className="text-[5px] font-bold text-white/40">COMPLIANCE</div>
+                  <div className="text-[7px] font-bold text-emerald-400">✓ 12/14 Filed</div>
+                </div>
+                <div className="space-y-0.5 text-[6px] text-zinc-400">
+                  <div className="flex items-center gap-0.5">
+                    <span className="w-0.5 h-0.5 rounded-full bg-violet-500 shrink-0" />
+                    <span>Clients: 248</span>
+                  </div>
+                  <div className="flex items-center gap-0.5">
+                    <span className="w-0.5 h-0.5 rounded-full bg-violet-500 shrink-0" />
+                    <span>Tasks: 56 Active</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col justify-between w-[90px] bg-[#0c0c0c] border border-white/5 rounded-lg p-2.5 shadow-md h-[80px]">
+              <div>
+                <div className="flex items-center gap-0.5 mb-0.5">
+                  <span className="text-[6px] uppercase tracking-wider font-bold px-1 bg-violet-500/10 text-violet-400 rounded-sm">AI Copilot</span>
+                </div>
+                <p className="text-[6px] text-white/40 leading-normal line-clamp-2">
+                  Analyzing overdue GST filings...
+                </p>
+              </div>
+              <div className="border-t border-white/5 pt-1 text-[6px] font-bold text-violet-400">
+                GROQ ACTIVE
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+
+    case "looply":
+      return (
+        <div className="w-full h-full bg-[#060606] flex items-center justify-center p-4 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:10px_10px]" />
+          <div className="relative z-10 w-full flex gap-3 items-stretch justify-center">
+            <div className="w-[120px] bg-[#0c0c0c] border border-white/5 rounded-lg p-2 shadow-md flex flex-col justify-between h-[80px]">
+              <div>
+                <div className="flex items-center justify-between mb-0.5">
+                  <span className="text-[7px] font-bold text-amber-400">LOOPLY</span>
+                  <span className="text-[6px] text-emerald-500 font-bold">LIVE</span>
+                </div>
+                <div className="h-6 w-full flex items-end justify-between gap-0.5 border-b border-white/5 pb-0.5 mt-1">
+                  <div className="w-full h-2 bg-amber-500/20 border border-amber-500/60 rounded-sm" />
+                  <div className="w-full h-4 bg-amber-500/20 border border-amber-500/60 rounded-sm" />
+                  <div className="w-full h-5 bg-amber-500/20 border border-amber-500/60 rounded-sm" />
+                  <div className="w-full h-3 bg-amber-500/20 border border-amber-500/60 rounded-sm" />
+                </div>
+              </div>
+              <div className="text-[5px] text-zinc-400 mt-0.5">Rewards Redeemed: 1,284</div>
+            </div>
+            <div className="flex flex-col justify-center w-[80px] bg-[#0c0c0c] border border-white/5 rounded-lg p-2 shadow-md text-[6px] h-[80px]">
+              <div className="font-bold border-b border-white/5 pb-0.5 mb-1 text-amber-400">POINTS</div>
+              <div className="flex justify-between text-white">
+                <span>User</span>
+                <span className="text-amber-400 font-bold">2,450</span>
+              </div>
+              <div className="flex justify-between text-white/50 mt-0.5">
+                <span>Tier</span>
+                <span className="text-amber-300 font-bold">Gold</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+
+    case "stocksense":
+      return (
+        <div className="w-full h-full bg-[#060606] flex items-center justify-center p-4 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:10px_10px]" />
+          <div className="relative z-10 w-full max-w-[200px] bg-[#0c0c0c] border border-white/5 rounded-lg shadow-md flex flex-col h-[80px] overflow-hidden">
+            <div className="flex items-center justify-between px-2 py-1 border-b border-white/5 bg-zinc-900/30">
+              <span className="text-[6px] font-bold tracking-widest text-cyan-400">
+                STOCKSENSE
+              </span>
+              <div className="flex items-center gap-1">
+                <span className="text-[5px] text-emerald-500 font-bold">BULLISH</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              </div>
+            </div>
+            <div className="flex-1 flex overflow-hidden p-1.5 gap-1">
+              <div className="flex-1 p-1 bg-zinc-900/40 rounded border border-white/5 flex items-end gap-[2px]">
+                {[3, 5, 4, 6, 5, 7, 6, 8, 7, 9].map((h, idx) => (
+                  <div
+                    key={idx}
+                    className="flex-1 rounded-t-sm"
+                    style={{
+                      height: `${h * 8}%`,
+                      background: h > 5 ? "rgba(16,185,129,0.4)" : "rgba(239,68,68,0.3)",
+                      borderTop: h > 5 ? "1px solid rgba(16,185,129,0.8)" : "1px solid rgba(239,68,68,0.6)",
+                    }}
+                  />
+                ))}
+              </div>
+              <div className="w-[50px] p-1 bg-zinc-900/40 rounded border border-white/5 flex flex-col justify-center text-[5px]">
+                <div className="text-white/40">Sentiment</div>
+                <div className="text-emerald-400 font-bold text-[8px]">78%</div>
+                <div className="text-white/30">Positive</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+
     case "sahmatipay":
       return (
         <div className="w-full h-full bg-[#060606] flex items-center justify-center p-4 relative overflow-hidden">

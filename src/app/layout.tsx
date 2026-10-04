@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "@/components/ui/CustomCursor";
+import HamburgerMenu from "@/components/ui/HamburgerMenu";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen bg-background text-foreground flex flex-col selection:bg-teal-500/30 custom-cursor">
         <CustomCursor />
+        <HamburgerMenu />
         {children}
       </body>
     </html>

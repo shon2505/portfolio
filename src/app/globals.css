@@ -87,6 +87,17 @@ body {
   background: #333;
 }
 
+/* ─── Marquee Animations for Skills ─── */
+@keyframes marquee-forward {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }

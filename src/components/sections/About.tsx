@@ -5,7 +5,7 @@ import { OFFERINGS } from "@/constants";
 
 export function About() {
   return (
-    <section id="about" className="py-32 relative z-10 bg-white dark:bg-[#030303] transition-colors duration-300">
+    <section id="about" className="py-20 relative z-10 bg-[#030303] transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

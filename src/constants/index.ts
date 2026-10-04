@@ -24,6 +24,8 @@ import {
   SiNumpy,
   SiScikitlearn,
   SiExpress,
+  SiPostgresql,
+  SiPrisma,
 } from "react-icons/si";
 
 // ─── About Section ──────────────────────────────────────────
@@ -65,6 +67,8 @@ export const SKILL_ICONS = [
   { Icon: SiScikitlearn, name: "Scikit-Learn" },
   { Icon: SiMongodb, name: "MongoDB" },
   { Icon: SiMysql, name: "MySQL" },
+  { Icon: SiPostgresql, name: "PostgreSQL" },
+  { Icon: SiPrisma, name: "Prisma" },
   { Icon: SiFirebase, name: "Firebase" },
   { Icon: FaGitAlt, name: "Git" },
   { Icon: FaGithub, name: "GitHub" },
@@ -76,6 +80,33 @@ export const SKILL_ICONS = [
 
 // ─── Projects Section ───────────────────────────────────────
 export const PROJECTS = [
+  {
+    id: "cafirm",
+    title: "CA FIRM AUTOMATION",
+    subtitle: "Multi-Tenant CRM with AI Compliance Copilot",
+    desc: "A multi-tenant CRM for Chartered Accountant firms to manage clients, statutory compliance deadlines, task assignments, and billing. Features role-based access control, tenant isolation, and an AI compliance copilot powered by Groq API that answers natural-language questions about compliance workload, overdue tasks, and client status from live CRM data.",
+    tags: ["TypeScript", "React", "Node.js", "PostgreSQL", "Prisma", "Groq API"],
+    github: "#",
+    live: "#",
+  },
+  {
+    id: "looply",
+    title: "LOOPLY",
+    subtitle: "Customer Loyalty & Engagement Platform",
+    desc: "A full-stack loyalty platform where businesses manage customer rewards, track transactions, and run engagement campaigns. Features REST APIs powering user accounts, loyalty points, and reward redemption with role-based access for business admins and staff. Deployed on AWS.",
+    tags: ["TypeScript", "React", "Next.js", "Node.js", "PostgreSQL", "MongoDB", "AWS"],
+    github: "#",
+    live: "#",
+  },
+  {
+    id: "stocksense",
+    title: "STOCKSENSE",
+    subtitle: "AI-Based Stock Sentiment Analysis Platform",
+    desc: "A web platform analyzing financial news sentiment with a trained ML model to estimate stock movement trends. Features real-time TradingView chart integration, backend logic in Python, and a TypeScript frontend for interactive data visualization.",
+    tags: ["Python", "TypeScript", "Machine Learning", "TradingView API", "HTML/CSS"],
+    github: "#",
+    live: "#",
+  },
   {
     id: "sahmatipay",
     title: "SAHMATIPAY",
@@ -126,16 +157,52 @@ export const PROJECTS = [
 // ─── Experience Section ─────────────────────────────────────
 export const EXPERIENCE_ITEMS = [
   {
-    period: "Present",
-    role: "Software Developer Trainee",
-    company: "NasKraft Pvt Ltd · Hybrid",
+    period: "Feb 2025 – Mar 2025",
+    role: "Full Stack Developer Intern",
+    company: "Eatzze · Chhatrapati Sambhajinagar",
     bullets: [
-      "Architected and developed robust Android applications utilizing native Java APIs, ensuring seamless performance across diverse device ecosystems.",
-      "Built desktop applications using Java Swing, focusing on responsive layouts and intuitive user interfaces for internal tooling.",
-      "Practiced solid software engineering fundamentals including version control, agile methodologies, and clean code architecture.",
+      "Developed application features using the MERN stack (MongoDB, Express.js, React.js, Node.js).",
+      "Built and tested backend REST APIs and handled database operations.",
+      "Designed responsive user interfaces and improved application performance.",
     ],
-    tags: ["Java", "Android SDK", "Java Swing", "Git", "UI/UX"],
+    tags: ["MongoDB", "Express.js", "React.js", "Node.js", "REST APIs"],
   },
+  {
+    period: "Jun 2023 – Sep 2023",
+    role: "Software Developer Intern",
+    company: "NasKraft IT Solutions Pvt. Ltd. · Chhatrapati Sambhajinagar",
+    bullets: [
+      "Assisted in developing Android applications and improving UI functionality.",
+      "Implemented backend logic using JavaServer Pages (JSP) and integrated database connectivity.",
+      "Contributed to debugging, feature implementation, and application testing.",
+    ],
+    tags: ["Java", "Android SDK", "JSP", "Git", "UI/UX"],
+  },
+];
+
+// ─── Achievements Section ───────────────────────────────────
+export const ACHIEVEMENTS = [
+  {
+    title: "1st Prize — Final Year Project Competition",
+    subtitle: "Polytechnic",
+    desc: "Won first place for building a Face Recognition Attendance System, demonstrating expertise in computer vision and real-time applications.",
+    icon: "trophy",
+  },
+  {
+    title: "Hackathon Winner — SahMati Pay",
+    subtitle: "AI Financial Agreement Analyzer",
+    desc: "Built an AI-powered financial agreement analyzer during a hackathon, securing the winning position with innovative consent-based payment technology.",
+    icon: "medal",
+  },
+];
+
+// ─── Certifications Section ─────────────────────────────────
+export const CERTIFICATIONS = [
+  { name: "AWS Cloud Quest: Cloud Practitioner", issuer: "AWS Skill Builder" },
+  { name: "Oracle Generative AI Certification", issuer: "Oracle" },
+  { name: "Prompt Engineering", issuer: "Cognitive Class" },
+  { name: "MongoDB + PHP", issuer: "Udemy" },
+  { name: "Node.js, Express & MongoDB Bootcamp", issuer: "Udemy" },
 ];
 
 // ─── Contact Section ────────────────────────────────────────
@@ -164,6 +231,16 @@ export const MINI_PROJECTS = [
   },
   { title: "BatterHub", desc: "Student Skill-Sharing Platform" },
   { title: "Liftly", desc: "Ride-Sharing Mobile Application" },
+];
+
+// ─── Navigation Links ──────────────────────────────────────
+export const NAV_LINKS = [
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
+  { label: "Achievements", href: "#achievements" },
+  { label: "Contact", href: "#contact" },
 ];
 
 // ─── Social / Identity ─────────────────────────────────────
